@@ -126,7 +126,7 @@ body::before {
 }
 
 .row#letter {
-    width: 30%;
+    width: 30vw;
     height: fit-content;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -305,3 +305,17 @@ img {
     width: 100%;
     height: 300px;
 }
+
+@media screen and (max-width: 768px) {
+    .row#letter {
+      width: 50vw;   /* a bit wider for readability on tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row#letter {
+      width: 80vw;   /* takes most of the small screen */
+      padding: 1.5em;
+    }
+}
+  
